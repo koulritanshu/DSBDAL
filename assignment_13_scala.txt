@@ -1,10 +1,10 @@
-var data = sc.textFile("textFile");
+val data = sc.textFile("textFile");
 data.collect;
-var splitdata = data.flatMap(line => line.split(" "));
+val splitdata = data.flatMap(line => line.split(" "));
 splitdata.collect;
-var mapdata = splitdata.map(word => (word,1));
+val mapdata = splitdata.map(word => (word,1));
 mapdata.collect;
-var reducedata = mapdata.reduceByKey(_+_);
+val reducedata = mapdata.reduceByKey(_+_);
 reducedata.collect;
 
 
