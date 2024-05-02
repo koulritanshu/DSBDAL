@@ -11,3 +11,9 @@ reducedata.collect;
 to save as a file then do
 reducedata.saveAsTextFile("output.txt")
 reducedata.foreach(println)
+
+TERMINAL COMMANDS:
+
+$SPARK_HOME/bin/spark-shell or just spark-shell
+
+:load scala_file.scala
